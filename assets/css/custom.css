@@ -13,7 +13,13 @@ nav {
 nav #nav-title {
     background-color: #4aaaa5;
     color: #fff;
-    padding: 25px;
+    font-family: serif;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 15px 30px;
+}
+nav ul a {
+    transition: .1s;
 }
 nav ul a:hover {
     color: #4aaaa5 !important;
@@ -27,6 +33,8 @@ body div.container {
 div.container h2 {
     border-bottom: #ccc solid 3px;
     color: #4aaaa5;
+    font-family: serif;
+    font-weight: 800;
 }
 /***** Homepage *****/
 #home div.container img {
@@ -35,11 +43,10 @@ div.container h2 {
 /***** Portfolio Page *****/
 #portfolio .project {
     position: relative;
-    width: 300px;
 }
-#portfolio .thumbnail {
-    max-width: 100%;
-    object-fit: cover;
+#portfolio .project .thumbnail {
+    height: unset;
+    width: 100%;
 }
 #portfolio h4 {
     background-color: #4aaaa5;
@@ -48,10 +55,10 @@ div.container h2 {
     font-size: 1.25rem;
     padding: 10px;
     position: absolute;
-        bottom: 0;
+        bottom: 1%;
     text-align: center;
     transition: .3s;
-    width: calc(100% - 30px);
+    width: 100%;
 }
 #portfolio h4:hover {
     bottom: 5px;
@@ -59,7 +66,12 @@ div.container h2 {
     filter: hue-rotate(180deg);
     opacity: .75;
     text-shadow: 0 0 3px #fff;
-    transition: .4s;
+    transition: .2s;
+}
+/***** Portfolio Page *****/
+#contact #submit-btn {
+    background-color: #4aaaa5;
+    color: #fff;
 }
 footer {
     background-color: #666;

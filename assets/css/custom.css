@@ -1,11 +1,31 @@
-body div.container {
-    margin-top: 100px;
+html {
+    height: 100%;
 }
-header nav h2 {
+body {
+    background-image: url("../images/geo-dark.png");
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+nav {
+    padding: 0 15%;
+}
+nav #nav-title {
     background-color: #4aaaa5;
+    color: #fff;
     padding: 25px;
 }
+nav ul a:hover {
+    color: #4aaaa5 !important;
+    text-shadow: 0 0 20px #4aaaa5;
+    transition: .1s;
+}
+body div.container {
+    flex: 1 0 auto;
+    margin-top: 120px;
+}
 div.container h2 {
+    border-bottom: #ccc solid 3px;
     color: #4aaaa5;
 }
 #home div.container img {
@@ -15,6 +35,14 @@ footer {
     background-color: #666;
     border-top: #4aaaa5 solid 8px;
     color: #ccc;
+    flex-shrink: 0;
     font-size: 0.8rem;
     padding: 30px 0 10px;
+}
+/***** Media Queries *****/
+@media only screen and (max-width: 768px) {
+    main#home .card img {
+        height: auto;
+        width: 100%;
+    }
 }

@@ -6,55 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/custom.css">
     <title>Bootstrap Portfolio</title>
 </head>
 
 <body id="home">
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light rounded fixed-top">
-            <a class="navbar-brand" href="index.html">Donna Kuang</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
-                aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top p-0 pr-3">
+            <a class="navbar-brand" id="nav-title" href="index.html">Donna Kuang</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse text-right" id="navbarsExample09">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="./index.html">About<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html" tabindex="-1">Contact</a>
+                        <a class="nav-link" href="./contact.html" tabindex="-1">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
-        <main role="main">
-            <div class="jumbotron">
-                <div class="col-sm-8 mx-auto">
-                    <h1>Navbar examples</h1>
-                    <p>This example is a quick exercise to illustrate how the navbar and its contents work. Some navbars
-                        extend the width of the viewport, others are confined within a <code>.container</code>. For
-                        positioning of navbars, checkout the <a href="/docs/4.3/examples/navbar-static/">top</a> and <a
-                            href="/docs/4.3/examples/navbar-fixed/">fixed top</a> examples.</p>
-                    <p>At the smallest breakpoint, the collapse plugin is used to hide the links and show a menu button
-                        to toggle the collapsed content.</p>
-                    <p>
-                        <a class="btn btn-primary" href="/docs/4.3/components/navbar/" role="button">View navbar docs
-                            »</a>
-                    </p>
+        <main role="main" id="home">
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title pb-4 mb-4">About Me</h2>
+                            <img class="float-left mr-4 mb-3" src="./assets/images/potato.jpg" alt="Donna Kuang">
+                            <p class="card-text">
+                                Donna Kuang is an aspiring Web Developer, currently working at Strategic Factory as an Online Services Specialist. She plays a dual role in creating print-ready templates for online portals and taking part in the front-end development process with custom websites.
+                            </p>
+                            <p class="card-text">
+                                Donna has a background in healthcare relating to nursing on a cardiac in-patient unit and physical therapy at an out-patient facility. While these career paths may seem disconnected, she has found that the process for troubleshooting technical issues is very similar to the planning of care for patients.
+                            </p>
+                            <p class="card-text">
+                                Creating and building has always been a passion that started with knitting from childhood. Donna has made numerous hats, scarves, blankets, and amigurumi (or stuffed animals or characters). Building Ikea furniture is never a dull task when she is involved.
+                            </p>
+                            <p class="card-text">
+                                Donna also enjoys hiking, rock climbing, painting, and puzzle games. Her latest obsession is trying to get 100% completion and finding all of the Easter Eggs in <em>Captain Toad: Treasure Tracker</em> for Nintendo Switch.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
     </div>
     <footer class="text-center">Copyright &copy;</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>

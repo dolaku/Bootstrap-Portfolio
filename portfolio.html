@@ -1,53 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <title>Bootstrap Portfolio</title>
 </head>
-<body>
-    <header>
-        <div>
-            <a href="index.html"><h2>Donna Kuang</h2></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+
+<body id="home">
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top p-0 pr-3">
+            <a class="navbar-brand" id="nav-title" href="index.html">Donna Kuang</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse text-right" id="navbarsExample09">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">About</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./portfolio.html">Portfolio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html" tabindex="-1">Contact</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
-    </header>
-    <section>
-        <div>
-            <h2>Portfolio</h2>
-            <div>
-                <div>
-                    <img src="assets/images/burrito.jpg" alt="">
-                    <a href="#"><h4>Hangman</h4></a>
-                </div>
-                <div>
-                    <img src="assets/images/chicken.jpg" alt="">
-                    <a href="#"><h4>RPG Game</h4></a>
-                </div>
-                <div>
-                    <img src="assets/images/fruit.jpg" alt="">
-                    <a href="#"><h4>Trivia Game</h4></a>
-                </div>
-                <div>
-                    <img src="assets/images/pasta.jpg" alt="">
-                    <a href="#"><h4>Rutgers Info Widget</h4></a>
-                </div>
-                <div>
-                    <img src="assets/images/sandwich.jpg" alt="">
-                    <a href="#"><h4>Rock Paper Scissors</h4></a>
+            </div>
+        </nav>
+
+        <main role="main" id="portfolio">
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="card-title pb-4 mb-4">Portfolio</h2>
+                            <div class="row mb-4">
+                                <div class="col-lg-4 col-md-6 col-s-12">
+                                    <div class="project">
+                                        <img class="thumbnail" src="assets/images/burrito.jpg" alt="">
+                                        <a href="#">
+                                            <h4>Hangman</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-s-12">
+                                    <div class="project">
+                                        <img class="thumbnail" src="assets/images/chicken.jpg" alt="">
+                                        <a href="#">
+                                            <h4>RPG Game</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> <!--row1-->
+                            <div class="row mb-4">
+                                <div class="col-lg-4 col-md-6 col-s-12">
+                                    <div class="project">
+                                        <img class="thumbnail" src="assets/images/fruit.jpg" alt="">
+                                        <a href="#">
+                                            <h4>Trivia Game</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-s-12">
+                                    <div class="project">
+                                        <img class="thumbnail" src="assets/images/pasta.jpg" alt="">
+                                        <a href="#">
+                                            <h4>Rutgers Info Widget</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> <!--row2-->
+                            <div class="row mb-4">
+                                <div class="col-lg-4 col-md-6 col-s-12">
+                                    <div class="project">
+                                        <img class="thumbnail" src="assets/images/sandwich.jpg" alt="">
+                                        <a href="#">
+                                            <h4>Rock Paper Scissors</h4>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div> <!--row3-->
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer>Copyright &copy;</footer>
+    </div>
+    </main>
+    </div>
+    <footer class="text-center">Copyright &copy;</footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
+
 </html>

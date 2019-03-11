@@ -28,8 +28,38 @@ div.container h2 {
     border-bottom: #ccc solid 3px;
     color: #4aaaa5;
 }
+/***** Homepage *****/
 #home div.container img {
     height: 180px;
+}
+/***** Portfolio Page *****/
+#portfolio .project {
+    position: relative;
+    width: 300px;
+}
+#portfolio .thumbnail {
+    max-width: 100%;
+    object-fit: cover;
+}
+#portfolio h4 {
+    background-color: #4aaaa5;
+    color: #fff;
+    font-family: 'Georgia', 'Times', 'Times New Roman', serif;
+    font-size: 1.25rem;
+    padding: 10px;
+    position: absolute;
+        bottom: 0;
+    text-align: center;
+    transition: .3s;
+    width: calc(100% - 30px);
+}
+#portfolio h4:hover {
+    bottom: 5px;
+    box-shadow: inset 0px 0px 10px #226966;
+    filter: hue-rotate(180deg);
+    opacity: .75;
+    text-shadow: 0 0 3px #fff;
+    transition: .4s;
 }
 footer {
     background-color: #666;
